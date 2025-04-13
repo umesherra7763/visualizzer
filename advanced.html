@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Join Table</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS for Table Styling -->
+    <link rel="stylesheet" href="assets/css/tables.css">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+    
+    
+    
+    
+    
+      <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+    
+    
+        <div class="profile-img">
+          <img src="assets/img/profile2.jpg" alt="" class="img-fluid rounded-circle">
+        </div>
+    
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">VISUAL SQL</h1>
+        </a>
+    
+       
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            
+            <li class="dropdown">
+              <a href="#"><i class="bi bi-menu-button navicon"></i> <span>JOINS</span> 
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul>
+                <li><a href="inner-join.html" class="menu-item">INNER JOIN</a></li>
+                <li><a href="left-join.html" class="menu-item">LEFT JOIN</a></li>
+                <li><a href="right-join.html" class="menu-item">RIGHT JOIN</a></li>
+                <li><a href="full-join.html" class="menu-item">FULL JOIN</a></li>
+                <li><a href="cross-join.html" class="menu-item">CROSS JOIN</a></li>
+    
+              </ul>
+            </li>
+            
+    
+            <li class="dropdown"><a href="groupby.html"><i class="bi bi-menu-button navicon"></i> <span>GROUP BY</span></a>
+     
+            </li>
+    
+    
+            <li class="dropdown"><a href="select.html"><i class="bi bi-menu-button navicon"></i> <span>SELECT</span> </a>
+         
+            </li>
+    
+    
+           
+          </ul>
+        </nav>
+    
+        
+          <a href="contact.html" class="contactus hover:cursor-pointer bg-gray-800">
+            Contact us
+          </a>
+          
+       
+    
+      </header>
+    
+      <title class="text-red-300">Inner Join Table</title>
+      
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Join Table</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS for Table Styling -->
+    <link rel="stylesheet" href="assets/css/tables.css">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-black">
+    
+    
+    
+    
+    
+      <header id="header" class="header dark-background d-flex flex-column">
+        <i class="header-toggle d-xl-none bi bi-list"></i>
+    
+    
+        <div class="profile-img">
+          <img src="assets/img/profile2.jpg" alt="" class="img-fluid rounded-circle">
+        </div>
+    
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">VISUAL SQL</h1>
+        </a>
+    
+       
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            
+            <li class="dropdown">
+              <a href="#"><i class="bi bi-menu-button navicon"></i> <span>JOINS</span> 
+                <i class="bi bi-chevron-down toggle-dropdown"></i>
+              </a>
+              <ul>
+                <li><a href="inner-join.html" class="menu-item">INNER JOIN</a></li>
+                <li><a href="left-join.html" class="menu-item">LEFT JOIN</a></li>
+                <li><a href="right-join.html" class="menu-item">RIGHT JOIN</a></li>
+                <li><a href="full-join.html" class="menu-item">FULL JOIN</a></li>
+                <li><a href="cross-join.html" class="menu-item">CROSS JOIN</a></li>
+    
+              </ul>
+            </li>
+            
+    
+            <li class="dropdown"><a href="groupby.html"><i class="bi bi-menu-button navicon"></i> <span>GROUP BY</span> </a>
+            
+            </li>
+    
+    
+            <li class="dropdown"><a href="select.html"><i class="bi bi-menu-button navicon"></i> <span>SELECT</span> </a>
+       
+            </li>
+
+
+            <li class="dropdown"><a href="where.html"><i class="bi bi-menu-button navicon"></i> <span>WHERE</span> </a>
+           
+            </li>
+
+            
+          <li class="dropdown"><a href="window.html"><i class="bi bi-menu-button navicon"></i> <span>WINDOW</span> </a>
+            
+          </li>
+
+          <li class="dropdown"><a href="subquery.html"><i class="bi bi-menu-button navicon"></i> <span>SUBQUERY</span> </a>
+            
+          </li>
+
+          <li class="dropdown"><a href="advanced.html"><i class="bi bi-menu-button navicon"></i> <span>ADVANCED SQL</span> </a>
+            
+          </li>
+           
+        <li class="dropdown"><a href="quiz.html"><i class="bi bi-menu-button navicon text-red-600"></i> <span>Take Quiz</span> </a>
+          
+        </li>
+          </ul>
+        </nav>
+    
+        
+          <a href="contact.html" class="contactus hover:cursor-pointer bg-gray-800">
+            Contact us
+          </a>
+          
+       
+    
+      </header>
+    
+      <title class="text-red-300">Inner Join Table</title>
+      
+  </head>
+  <body>
+    <div class="tables-container">
+      <!-- Students Table -->
+      <div class="table-wrapper">
+        <h3>Students</h3>
+        <table id="multiTableStudents">
+          <thead>
+            <tr>
+              <th>StudentID</th>
+              <th>StudentName</th>
+              <th>DepartmentID</th>
+              <th>Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Aarav</td><td>101</td><td>92</td></tr>
+            <tr><td>2</td><td>Isha</td><td>102</td><td>85</td></tr>
+            <tr><td>3</td><td>Rohan</td><td>101</td><td>60</td></tr>
+            <tr><td>4</td><td>Neha</td><td>103</td><td>78</td></tr>
+            <tr><td>5</td><td>Kabir</td><td>102</td><td>88</td></tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <!-- Departments Table -->
+      <div class="table-wrapper">
+        <h3>Departments</h3>
+        <table id="multiTableDepartments">
+          <thead>
+            <tr>
+              <th>DeptID</th>
+              <th>DeptName</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>101</td><td>Computer Science</td></tr>
+            <tr><td>102</td><td>Electrical</td></tr>
+            <tr><td>103</td><td>Mechanical</td></tr>
+          </tbody>
+        </table>
+      </div>
+    
+      <!-- Courses Table -->
+      <div class="table-wrapper">
+        <h3>Courses</h3>
+        <table id="multiTableCourses">
+          <thead>
+            <tr>
+              <th>CourseID</th>
+              <th>CourseName</th>
+              <th>DeptID</th>
+              <th>CourseLevel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>C1</td><td>Data Structures</td><td>101</td><td>Advanced</td></tr>
+            <tr><td>C2</td><td>Power Systems</td><td>102</td><td>Advanced</td></tr>
+            <tr><td>C3</td><td>Thermodynamics</td><td>103</td><td>Basic</td></tr>
+            <tr><td>C4</td><td>AI & ML</td><td>101</td><td>Advanced</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <h3>Complex Multi-Join Query Result</h3>
+    
+    <label for="complexSpeed" class="mx-[500px] text-white">Animation Speed (ms):</label>
+    <input type="range" class="w-1/2 mx-[500px]" id="complexSpeed" min="100" max="2000" step="100" value="800">
+    <span id="complexSpeedValue">800</span> ms
+    
+    <button onclick="showComplexJoinQuery()" class="mx-[600px] my-4 px-4 py-2 bg-slate-600 text-blue-300 border rounded-md">
+      Run: SELECT StudentID, StudentName, DeptName, CourseName, Marks<br>
+      FROM Students JOIN Departments JOIN Courses...<br>
+      WHERE Marks >= 75 AND CourseLevel = 'Advanced'
+    </button>
+    
+    <div id="complexResultContainer" class="text-white mx-[600px]" style="max-width: 1000px; display: none;">
+      <table>
+        <thead>
+          <tr>
+            <th>StudentID</th>
+            <th>StudentName</th>
+            <th>Department</th>
+            <th>Course</th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+        <tbody id="complexResultBody"></tbody>
+      </table>
+    </div>
+    
+ 
+  
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+    
+    
+      
+  
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
